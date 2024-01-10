@@ -1,25 +1,24 @@
-import "./App.css";
 import { Counter } from "./components/Counter";
-import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
 import NavBar from './components/NavBar.tsx'
 
 function App() {
   return (
     <>
       <NavBar />
-      <div>
+      <div className="flex justify-center items-center p-2">
         <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
+          <img src={viteLogo} className="logo w-28" alt="Vite logo" />
         </a>
         <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
+          <img src={reactLogo} className="w-28 animate-spin-slow" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
-      <Counter />
+      <h1 className="text-center">Vite + React</h1>
+      <div className="text-center">
+        <Counter />
+      </div>
     </>
   );
 }
