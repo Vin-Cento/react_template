@@ -9,7 +9,7 @@ function App() {
       <NavBar />
       <div className="flex justify-center items-center p-2">
         <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo w-28" alt="Vite logo" />
+          <img src={viteLogo} className="w-28 animate-pulse-slow" alt="Vite logo" />
         </a>
         <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="w-28 animate-spin-slow" alt="React logo" />
